@@ -1,21 +1,21 @@
 server:
   port: 8888
 
-#spring:
-#  cloud:
-#    config:
-#      server:
-#        git:
-#          uri: 
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shuebdalvi/vRideApp-configurations.git 
           
 ---
 
 spring:
   profiles: dev
-  
+ 
   cloud:
     config:
       server:
         native:
-          search-locations: file:///home/shueb/code/sts-workspace/vRide-Config
+          search-locations: file:///home/shueb/code/vRide-workspace/vRide-Config
   
